@@ -66,7 +66,7 @@ header {
 
     #banner{
         padding: 0% 50px;
-        background-image: url(https://cdn.pixabay.com/photo/2016/03/26/13/09/cup-of-coffee-1280537_1280.jpg);
+        background-image: url(https://javierviver.com/wp-content/uploads/2020/04/Captura-de-pantalla-2020-04-23-a-las-15.57.19-700x525.png);
         height: 65vh;
         background-size: cover;
         background-position: center;
@@ -74,7 +74,7 @@ header {
     
     #banner::before{
         content: " " ;
-        background: rgba(77, 77, 92, 0.4);
+        background: rgba(77, 77, 92, 0.1);
         position: absolute;
         width: 100%;
         height: 65vh;
@@ -120,8 +120,15 @@ header {
     }
 /* main */
 
+    #barra_cv3 {
+    background: #333;
+    position:absolute;
+    height: 8vh;
+    width:150vh;
+    }
+
     .historia_vida {
-        background: url(https://cdn.pixabay.com/photo/2016/08/11/22/12/door-1587023_1280.jpg) center fixed no-repeat;
+        background: url(https://cdn.pixabay.com/photo/2020/06/04/11/10/bulb-5258341_1280.jpg) center fixed no-repeat;
         background-size: contain;
         position:absolute;
         align-items: flex-end;
