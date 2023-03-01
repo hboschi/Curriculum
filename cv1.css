@@ -66,7 +66,7 @@ header {
 
     #banner{
         padding: 0% 50px;
-        background-image: url(imagenes/apple-ga91d2264d_1280.jpg);
+        background-image: url(https://cdn.pixabay.com/photo/2016/03/26/13/09/cup-of-coffee-1280537_1280.jpg);
         height: 65vh;
         background-size: cover;
         background-position: center;
@@ -110,16 +110,23 @@ header {
     .botton_empezar:hover {
         background: #e9632970;
     }
-
+    .cv2 {
+        position:absolute;
+        display:inline-block;
+        margin-left: 250px;
+        padding: 0% 50px;
+        height: 110vh;
+        width: 45vh;
+    }
 /* main */
 
     .historia_vida {
-        background: url(imagenes/apple-ga91d2264d_1280.jpg) center fixed no-repeat;
+        background: url(https://cdn.pixabay.com/photo/2016/08/11/22/12/door-1587023_1280.jpg) center fixed no-repeat;
         background-size: contain;
         position:absolute;
         align-items: flex-end;
-        height: 135vh;
-        width: 125vh;
+        height: 130vh;
+        width: 145vh;
         left: 350px;
     }
 
@@ -158,12 +165,13 @@ aside {
     position:relative;
 
 }
+
     #progress div {
         width: 12rem;
         height: 12rem;
         border-radius: 50%;
         margin: 30px;;
-        display:block;
+        display:;
     }
 
     .circular-progress-html {
