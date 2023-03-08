@@ -2,12 +2,12 @@
 body {
     background: #111;
 }
-h1 {
-    color: #fff;
+h1, h2 {
+    color:rgb(208, 226, 43);
 }
 header {
     height: 50px;
-    background:  rgba(77, 77, 92, 0.2);
+    background:  rgba(6, 6, 235, 0.2);
     padding: 0 40px;
     color: #fff;
     display: flex;
@@ -15,12 +15,12 @@ header {
     align-items: center;
     }
 
-    .logo {
+    /*.logo {
         text-transform: uppercase;
         color: rgb(221, 142, 45);
         font-weight: 200px;
         font-size: 20px;
-    }
+    }*/
     
     .menu a{
         color: #fff;
@@ -45,7 +45,7 @@ header {
     .menu a:hover,
     .mostrar_menu a:hover,
     .cerrar_menu a:hover{
-        color: orange;
+        color: rgb(208, 226, 43);
     }
     #check {
         display: none;
@@ -55,11 +55,10 @@ header {
       #people img{
         position:relative;
         top: 45px;
-        left: -10px;
         width: 160px;
         height: 160px;
         border-radius: 100%;
-        z-index: 1000;
+        z-index: 100;
     }
 
     /* BANNER */
@@ -87,7 +86,8 @@ header {
         display: flex;
         flex-direction: column;
         justify-content: center;
-    
+        align-items: center;
+        text-align: center;
     }
     .contenido_banner h3{
         font-size: 25px;
@@ -102,13 +102,13 @@ header {
     .botton_empezar{
         text-decoration: none;
         color: #fff;
-        border: 2px solid orange;
+        border: 2px solid rgb(208, 226, 43);
         padding: 20px 40px;
-        align-self: baseline;
+        align-self:center;
         transition: all 0.4s;
     }
     .botton_empezar:hover {
-        background: #e9632970;
+        background: rgba(208, 226, 43, 0.241);
     }
     .cv2 {
         position:absolute;
@@ -128,25 +128,25 @@ header {
     }
 
     .historia_vida {
-        background: url(https://cdn.pixabay.com/photo/2020/06/04/11/10/bulb-5258341_1280.jpg) center fixed no-repeat;
-        background-size: contain;
-        position:absolute;
-        align-items: flex-end;
+        background: url(https://cdn.pixabay.com/photo/2020/06/04/11/10/bulb-5258341_1280.jpg) fixed center no-repeat;
+        background-size:contain;
+        position:relative;
         height: 130vh;
-        width: 145vh;
-        left: 350px;
+        width: 100%;
     }
 
     #timeline{
         content: " ";
-        position: absolute;
+        position:absolute;
         background: white;
         width: 1px;
         right: 50%;
         font-family: roboto;
+        align-items: center;
+        align-content: center;
     }
     .child {
-        position: relative;
+        position:relative;
     }
     .child:nth-child(odd){
         float: left;
@@ -155,14 +155,75 @@ header {
         float: right;
     }
     .content{
-        width: 200px;
+        width: 280px;
         padding: 15px;
         color: rgba(255, 68, 0, 0.674);
         background: rgb(255, 255, 255, 0.5);
     }
 
     .historia_vida p{
-        color: orange;
+        color:yellow;
+    }
+
+    .Experiencia {
+        position: relative;
+        text-align: center;
+        margin: 40px 2px;
+        background: url(https://cdn.pixabay.com/photo/2020/06/04/11/10/bulb-5258341_1280.jpg) fixed center no-repeat;
+    }
+
+    .Experiencia h2{
+        color:orange;
+        font-size:larger;
+    }
+    .Experiencia h4{
+        color: #fff;
+        font-size:x-large;
+    }
+    .Experiencia i{
+        color:rgb(208, 226, 43);
+        font-size: xx-large;
+    }
+    .cajas{
+        position: relative;
+        margin: 100px auto;
+        height: 500px;
+        width: 800px;
+    }
+    .caja1, .caja2, .caja3, .caja4, .caja5, .caja6 {
+        width: 250px;
+        height: 200px;
+        position: absolute;
+        background-color:rgba(6, 6, 235, 0.2);
+    }
+    .caja1{
+        top: 50px;
+        right: 510px;
+    }
+    .caja2{
+        top: 50px;
+        right: 250px;
+    }
+    .caja3{
+        top: 50px;
+        right: -10px;
+    }
+    .caja4{
+        right: 510px;
+        bottom: 0;
+    }
+    .caja5{
+        right: 250px;
+        bottom: 0;
+    }
+    .caja6{
+        left: 560px;
+        bottom: 0;
+
+    }
+
+    .caja1:hover, .caja2:hover, .caja3:hover, .caja4:hover, .caja5:hover, .caja6:hover {
+        background-color: rgba(208, 226, 43, 0.241);
     }
 
 /* aside barra de progreso */
@@ -170,15 +231,16 @@ header {
 aside {
     align-items:center;
     position:relative;
-
+    display: contents;
 }
 
     #progress div {
         width: 12rem;
         height: 12rem;
         border-radius: 50%;
-        margin: 30px;;
-        display:;
+        margin: 45px 25px 0px 55px;
+        display:inline-block;
+        position:relative;
     }
 
     .circular-progress-html {
@@ -203,6 +265,12 @@ aside {
         background: linear-gradient(0deg, rgb(208, 226, 43) 37%, rgba(255,255,255,0.17) 50%);
         position: relative;
         transform: rotate(81deg);
+    }
+
+    .circular-progress-frances {
+        background: linear-gradient(0deg, rgb(43, 195, 226) 37%, rgba(255,255,255,0.17) 50%);
+        position: relative;
+        transform: rotate(171deg);
     }
 
     #progress div::before {
@@ -253,6 +321,15 @@ aside {
         transform: rotate(-81deg);
     }
 
+    .circular-progress-frances::before {
+        content:"Frances";
+        font-size: 2rem;
+        color: rgb(43, 195, 226);
+        text-align: center;
+        line-height: 8rem;
+        transform: rotate(-171deg);
+    }
+
     #progress div::after {
         width: 12rem;
         height: 12rem;
@@ -287,6 +364,12 @@ aside {
         color: rgb(208, 226, 43);
     }
 
+    .circular-progress-frances::after {
+        content: "95%";
+        transform: scale(1.1) rotate(-171deg);
+        color: rgb(43, 195, 226);
+    }
+
 /* footer - redes sociales */    
 
 footer {
@@ -294,7 +377,6 @@ footer {
      position:relative;
 }
     .redes-conteiner {
-        display:block;
         position: relative;
         height: 100vh;
         align-items:center;
@@ -303,7 +385,7 @@ footer {
     .redes-container ul li {
         display:inline-block;
         position:relative;
-        margin: 0 5px;
+        margin: auto 5px;
         width: 50px;
         height: 50px;
         text-align: center;
@@ -346,7 +428,7 @@ footer {
 
     /* responsive */
 
-@media (max-width: 768px){
+@media (max-width: 816px){
    
     /* header */ 
     
@@ -364,7 +446,7 @@ footer {
         text-align: center;
         padding: 100px 0px;
         z-index: 100px;
-        transition: 0.9;
+        transition: 109;
     }
     .menu a{
         display: block;
@@ -387,13 +469,60 @@ footer {
         height: 95px;
         position:relative;
         border-radius: 100%;
-        top: 25px;
-        left: -40;
-}
-    .logo{
+    }
+
+    .Experiencia h2, .Experiencia h4{
+        font-size: medium;
+    }
+    .cajas{
+        position:relative;
+        margin: 5px auto;
+        height: 800px;
+        width: 200px;
+    }
+    .caja1, .caja2, .caja3, .caja4, .caja5, .caja6 {
+        position: unset;
+        width: 125px;
+        height: 100px;
+        background-color:rgba(6, 6, 235, 0.2);
+    }
+
+    /*.logo{
         text-transform: uppercase;
         color: orange;
         font-weight: 20px;
         font-size: 20px;
+    }*/
+    
+    /* main */
+    
+    .historia_vida {
+        background: url(https://cdn.pixabay.com/photo/2020/06/04/11/10/bulb-5258341_1280.jpg) center fixed no-repeat;
+        background-size:auto;
+        position:relative;
+        align-items:center;
+        height: 65vh;
+        width: 65vh;
+        left: auto;
+        }
+    
+    #timeline{
+        content: " ";
+        position: relative;
+        background: white;
+        width: 1px;
+        right: 20%;
+        font-family: roboto;
+        }
+        
+        
+    /* footer - redes sociales */
+    footer {
+        position:fixed;
     }
+
+
 }
+
+
+

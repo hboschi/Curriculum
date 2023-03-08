@@ -19,20 +19,20 @@ const frameworks = [
                 "latitude": "-69.8246",
                 "longitude": "134.8719"
               },
-              "timezone": {
+              "antecedentes": {
                 "offset": "+9:30",
                 "description": "Adelaide, Darwin"
               }
             },
             "email": "jennie.nichols@example.com",
             "login": {
-              "uuid": "7a0eed16-9430-4d68-901f-c0d4c1c3bf00",
-              "username": "yellowpeacock117",
-              "password": "addison",
-              "salt": "sld1yGtd",
-              "md5": "ab54ac4c0be9480ae8fa5e9e2a5196a3",
-              "sha1": "edcf2ce613cbdea349133c52dc2f3b83168dc51b",
-              "sha256": "48df5229235ada28389b91e60a935e4f9b73eb4bdb855ef9258a1751f10bdc5d"
+              "a1": "Año 1992",
+              "a2": "Año 2010",
+              "a3": "Año 2012",
+              "a4": "Año 2014",
+              "a5": "Año 2020",
+              "a6": "Año 2022",
+              "sha256": "Lorem ipsum  saepe necessitatibus eaque qui iusto, blanditiis voluptatem ."
             },
             "dob": {
               "date": "1992-03-08T15:13:16.688Z",
@@ -58,25 +58,25 @@ const frameworks = [
     ];
     var html = " ";
     frameworks.forEach (e => {
-        html +="<div> <div><h2>"+e.name.title+ " "+ e.name.first + " " +e.name.last +" </h2> </div> </div>"
+        html +="<div> <div><h1>"+e.name.title+ " "+ e.name.first + " " +e.name.last +" </h1> </div> </div>"
     })
     names.innerHTML = html
     
     var html = " ";
     frameworks.forEach (e => {
-        html +="<div> <div><h3>"+e.phone+ "  </h3> </div> </div>"
+        html +="<div> <div><h3> "+e.phone+ " </h3> </div> </div>"
         html +="<div> <div><h3> "+ e.cell + " </h3> </div> </div>"
-        html +="<div> <div><h3>"+e.email+ " </h3> </div> </div>"
+        html +="<div> <div><h3> "+e.email+ " </h3> </div> </div>"
     })
     banner_tex1.innerHTML = html
 
     var html3 = " ";
     frameworks.forEach (e => {
-        html3 +="<div class= 'child' > <div class= 'content'><h2>"+e.gender +" </h2> <p>" +"</p></div> </div>"
-        html3 +="<div class= 'child' > <div class= 'content'><h2>"+e.location.street.number+ " "+ e.location.street.name + " </h2> <p> "+e.location.postcode+ " "+ e.location.country + " </p></div> </div>"
-        html3 +="<div class= 'child' > <div class= 'content'><h2>"+e.dob.age+ " "+ e.dob.date+ " </h2> <p> "+e.registered.age+ " "+ e.registered.date + " </p></div> </div>"
-        html3 +="<div class= 'child' > <div class= 'content'><h2>"+e.id.name+ " "+ e.id.value + " </h2> <p> "+e.login.username+ " "+ e.login.password + " </p></div> </div>"
-        html3 +="<div class= 'child' > <div class= 'content'><h2>"+e.dob.age+ " "+ e.dob.date+ " </h2> <p> "+e.registered.age+ " "+ e.registered.date + " </p></div> </div>"
-        html3 +="<div class= 'child' > <div class= 'content'><h2>"+e.id.name+ " "+ e.id.value + " </h2> <p> "+e.login.username+ " "+ e.login.password + " </p></div> </div>"
+        html3 +="<div class= 'child' > <div class= 'content'><h2>"+e.login.a1 +" </h2> <p>"+e.login.sha256 +"</p></div> </div>"
+        html3 +="<div class= 'child' > <div class= 'content'><h2>"+e.login.a2+ "  </h2> <p> "+e.login.sha256+ " </p></div> </div>"
+        html3 +="<div class= 'child' > <div class= 'content'><h2>"+e.login.a3+ " </h2> <p> "+e.login.sha256+ "  </p></div> </div>"
+        html3 +="<div class= 'child' > <div class= 'content'><h2>"+e.login.a4+ " </h2> <p> "+e.login.sha256+ "  </p></div> </div>"
+        html3 +="<div class= 'child' > <div class= 'content'><h2>"+e.login.a5+ " </h2> <p> "+e.login.sha256+ "  </p></div> </div>"
+        html3 +="<div class= 'child' > <div class= 'content'><h2>"+e.login.a6+ " </h2> <p> "+e.login.sha256+ "  </p></div> </div>"
     })
     timeline.innerHTML = html3
