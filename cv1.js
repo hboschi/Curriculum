@@ -80,3 +80,11 @@ const frameworks = [
         html3 +="<div class= 'child' > <div class= 'content'><h2>"+e.login.a6+ " </h2> <p> "+e.login.sha256+ "  </p></div> </div>"
     })
     timeline.innerHTML = html3
+
+
+
+    function contratar (nombre,mail){
+      console.log ("hola soy" + nombre + " " + mail);
+      var botton = document.getElementsByClassName("botton_empezar");
+      alert("hola soy," + " " + nombre + " " + ",muchas gracias por querer contratar mis servicios para esto por favor contactar por via mail al" + " " + mail)
+    }
