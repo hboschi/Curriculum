@@ -187,39 +187,67 @@ header {
     .cajas{
         position: relative;
         margin: 100px auto;
-        height: 500px;
+        height: 1300px;
         width: 800px;
     }
     .caja1, .caja2, .caja3, .caja4, .caja5, .caja6 {
         width: 250px;
         height: 200px;
-        position: absolute;
+        position:absolute;
         background-color:rgba(6, 6, 235, 0.2);
+    }
+    .caja1 img, .caja2 img, .caja3 img, .caja4 img, .caja5 img, .caja6 img {
+        width: 250px;
+        height: 200px;
+        position:absolute;
     }
     .caja1{
         top: 50px;
         right: 510px;
     }
     .caja2{
-        top: 50px;
+        top: 250px;
         right: 250px;
     }
     .caja3{
-        top: 50px;
-        right: -10px;
+        top: 450px;
+        right: 510px;
     }
     .caja4{
-        right: 510px;
-        bottom: 0;
+        top: 650px;
+        right: 250px;
     }
     .caja5{
-        right: 250px;
-        bottom: 0;
+        top: 850px;
+        right: 510px;
     }
     .caja6{
-        left: 560px;
-        bottom: 0;
-
+        top: 1050px;
+        right: 250px;
+    }
+    .caja1 img {
+        top: 0px;
+        left: 260px;
+    }
+    .caja2 img {
+        top: 0px;
+        right: 260px;
+    }
+    .caja3 img {
+        top: 0px;
+        left: 260px;
+    }
+    .caja4 img {
+        top: 0px;
+        right: 260px;
+    }
+    .caja5 img {
+        top: 0px;
+        left: 260px;
+    }
+    .caja6 img{
+        top: 0px;
+        right: 260px;
     }
 
     .caja1:hover, .caja2:hover, .caja3:hover, .caja4:hover, .caja5:hover, .caja6:hover {
