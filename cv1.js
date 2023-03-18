@@ -81,10 +81,19 @@ const frameworks = [
     })
     timeline.innerHTML = html3
 
-
-
     function contratar (nombre,mail){
       console.log ("hola soy" + nombre + " " + mail);
       var botton = document.getElementsByClassName("botton_empezar");
       alert("hola soy," + " " + nombre + " " + ",muchas gracias por querer contratar mis servicios para esto por favor contactar por via mail al" + " " + mail)
+    }
+
+    //botton up scroll
+    document.getElementById("button-up").addEventListener("click", scrollUp);
+
+    function scrollUp(){
+      var currentScroll = document.documentElement.scrollTop || document.body.scrollTop;
+      if (currentScroll > 0) {
+        window.requestAnimationFrame(scrollUp);
+        window.scrollTo (0, currentScroll - (currentScroll / 15));
+      }
     }

@@ -263,6 +263,7 @@ aside {
 }
 
     #progress div {
+        top: 25px;
         width: 12rem;
         height: 12rem;
         border-radius: 50%;
@@ -397,6 +398,31 @@ aside {
         transform: scale(1.1) rotate(-171deg);
         color: rgb(43, 195, 226);
     }
+/*boton de ir arriba*/
+
+#button-up {
+    width: 60px;
+    height: 60px;
+    background:rgba(6, 6, 235, 0.6);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: #fff;
+    border-radius: 50%;
+    font-size: 20px;
+    position: fixed;
+    bottom: 50px;
+    right: 50px;
+    cursor: pointer;
+    border: 4px solid transparent;
+    transition: all 300ms ease;
+    z-index: 90;
+}
+#button-up:hover{
+    transform: scale(1.1);
+    border-color: rgba(0, 0, 0, 0.5);      
+}
+
 
 /* footer - redes sociales */    
 
