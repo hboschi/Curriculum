@@ -61,7 +61,7 @@ header {
         z-index: 100;
     }
 
-    /* BANNER */
+/* BANNER */
 
     #banner{
         padding: 0% 50px;
@@ -120,12 +120,16 @@ header {
     }
 /* main */
 
+/* footer de pagina cv3*/
+
     #barra_cv3 {
     background: #333;
     position:absolute;
     height: 8vh;
     width:150vh;
     }
+
+/* Linea de historia de vida */
 
     .historia_vida {
         background: url(https://cdn.pixabay.com/photo/2020/06/04/11/10/bulb-5258341_1280.jpg) fixed center no-repeat;
@@ -165,6 +169,8 @@ header {
         color:yellow;
     }
 
+    /* main pagina de esperiencia*/
+
     .Experiencia {
         position: relative;
         text-align: center;
@@ -184,6 +190,9 @@ header {
         color:rgb(208, 226, 43);
         font-size: xx-large;
     }
+
+
+
     .cajas{
         position: relative;
         margin: 100px auto;
@@ -398,11 +407,12 @@ aside {
         transform: scale(1.1) rotate(-171deg);
         color: rgb(43, 195, 226);
     }
+
 /*boton de ir arriba*/
 
 #button-up {
-    width: 60px;
-    height: 60px;
+    width: 45px;
+    height: 45px;
     background:rgba(6, 6, 235, 0.6);
     display: flex;
     justify-content: center;
@@ -422,7 +432,6 @@ aside {
     transform: scale(1.1);
     border-color: rgba(0, 0, 0, 0.5);      
 }
-
 
 /* footer - redes sociales */    
 
@@ -478,8 +487,6 @@ footer {
         background: #0077b5;
     }
 
-
-
     /* responsive */
 
 @media (max-width: 816px){
@@ -490,16 +497,17 @@ footer {
     .cerrar_menu{
         display: block;
     }
+
     .menu {
         position: fixed;
         width: 100%;
         height: 60vh;
-        background: black;
+        background: rgb(0, 0, 0);
         right: -100%;
         top: 0%;
         text-align: center;
         padding: 100px 0px;
-        z-index: 100px;
+        z-index: 1400;
         transition: 109;
     }
     .menu a{
@@ -515,7 +523,7 @@ footer {
         right: 0px;
     }
     .contenido_banner{
-        display: none;
+        display:flex;
     }
     
     #people img{
@@ -530,15 +538,22 @@ footer {
     }
     .cajas{
         position:relative;
-        margin: 5px auto;
+        margin: 95px auto;
         height: 800px;
         width: 200px;
     }
     .caja1, .caja2, .caja3, .caja4, .caja5, .caja6 {
         position: unset;
+        width: 195px;
+        height: 175px;
+        background-color:rgba(6, 6, 235, 0.2);
+    }
+
+    .caja1 img, .caja2 img, .caja3 img, .caja4 img, .caja5 img, .caja6 img {
         width: 125px;
         height: 100px;
-        background-color:rgba(6, 6, 235, 0.2);
+        position:absolute;
+        display: none;
     }
 
     /*.logo{
@@ -548,35 +563,31 @@ footer {
         font-size: 20px;
     }*/
     
-    /* main */
+    /* main responsive*/
     
     .historia_vida {
         background: url(https://cdn.pixabay.com/photo/2020/06/04/11/10/bulb-5258341_1280.jpg) center fixed no-repeat;
         background-size:auto;
+        margin:auto;
         position:relative;
         align-items:center;
-        height: 65vh;
-        width: 65vh;
-        left: auto;
+        height:fit-content;
+        width: 45vh;
         }
     
     #timeline{
         content: " ";
         position: relative;
         background: white;
-        width: 1px;
-        right: 20%;
+        width:min-content;
+        right:auto;
         font-family: roboto;
         }
         
         
-    /* footer - redes sociales */
+    /* footer - redes sociales responsive*/
+
     footer {
         position:fixed;
     }
-
-
 }
-
-
-
